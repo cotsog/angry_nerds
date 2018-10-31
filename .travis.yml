@@ -15,6 +15,7 @@ addons:
       - fonts-droid
 before_script:
   - git clone https://github.com/flutter/flutter.git -b beta
+  - flutter packages get
   - ./flutter/bin/flutter doctor
 script:
   - ./flutter/bin/flutter test
